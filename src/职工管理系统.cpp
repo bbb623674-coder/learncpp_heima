@@ -3,12 +3,25 @@
 
 #include "worker.h"
 #include "employee.h"
+#include "manager.h"
+#include "boss.h"
 
 int main()
 {
     Worker* worker = nullptr;
     worker = new Employee(1, "张三", 1);
     worker->showInfo();
+    delete worker;
+
+    worker = new Manager(2, "里斯", 2);
+    worker->showInfo();
+    delete worker;
+
+    worker = new Boss(3, "网五", 3);
+    worker->showInfo();
+    delete worker;
+
+    
 
     //实例化管理者对象
     // WorkerManager wm;

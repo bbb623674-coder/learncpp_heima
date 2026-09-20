@@ -10,7 +10,7 @@ public:
     virtual void showInfo() = 0;
 
     //获取岗位名称
-    virtual std::string getDeptName() = 0;
+    virtual std::string getDepName() = 0;
 
     //职工编号
     int m_Id;

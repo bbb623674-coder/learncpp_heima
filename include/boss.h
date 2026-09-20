@@ -1,17 +1,18 @@
-//普通员工文件
-#pragma once
+#pragma once 
 #include <iostream>
 #include "worker.h"
+#include <string>
 
-class Employee : public Worker
+//老板
+class Boss : public Worker
 {
 public:
-    Employee(int id, std::string name, int depId);
+    //构造函数
+    Boss(int id, std::string name, int dId);
 
     //显示个人信息
     virtual void showInfo();
 
     //获取岗位名称
     virtual std::string getDepName();
-
 };

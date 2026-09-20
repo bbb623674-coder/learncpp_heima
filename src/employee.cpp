@@ -17,7 +17,7 @@ void Employee::showInfo()
 }
 
 //获取岗位名称
-std::string Employee::getDeptName()
+std::string Employee::getDepName()
 {
     return std::string("员工");
 }
