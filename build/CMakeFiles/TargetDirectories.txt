@@ -1,0 +1,3 @@
+/Users/bai/Desktop/c++/职工管理系统/build/CMakeFiles/worker_system.dir
+/Users/bai/Desktop/c++/职工管理系统/build/CMakeFiles/edit_cache.dir
+/Users/bai/Desktop/c++/职工管理系统/build/CMakeFiles/rebuild_cache.dir
