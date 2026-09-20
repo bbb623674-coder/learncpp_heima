@@ -1,0 +1,10 @@
+^E:\LEARNCPP\职工管理系统\LEARNCPP_HEIMA\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/learnCPP/职工管理系统/learncpp_heima -BE:/learnCPP/职工管理系统/learncpp_heima/build --check-stamp-file E:/learnCPP/职工管理系统/learncpp_heima/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

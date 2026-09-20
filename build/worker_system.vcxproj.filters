@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\learnCPP\职工管理系统\learncpp_heima\src\职工管理系统.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\learnCPP\职工管理系统\learncpp_heima\src\employee.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\learnCPP\职工管理系统\learncpp_heima\src\manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\learnCPP\职工管理系统\learncpp_heima\src\boss.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\learnCPP\职工管理系统\learncpp_heima\src\workerManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\learnCPP\职工管理系统\learncpp_heima\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8CBFF75C-7D92-34F7-BEB6-6AE1BEFE63E0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

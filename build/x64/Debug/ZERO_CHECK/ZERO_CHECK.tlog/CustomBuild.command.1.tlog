@@ -1,0 +1,10 @@
+^E:\LEARNCPP\职工管理系统\LEARNCPP_HEIMA\BUILD\CMAKEFILES\3AADE6CE14F9526E537FD1C355947F7B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/learnCPP/职工管理系统/learncpp_heima -BE:/learnCPP/职工管理系统/learncpp_heima/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/learnCPP/职工管理系统/learncpp_heima/build/WorkerManagerSystem.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
