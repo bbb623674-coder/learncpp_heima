@@ -1,5 +1,5 @@
 #include <iostream>          // 系统/标准库头文件：用尖括号 <>
-#include <windows.h>         // Windows API：用于设置控制台编码
+// #include <windows.h>         // Windows API：用于设置控制台编码
 
 #include "workerManager.h"   // 自己项目的头文件：用双引号 ""，只写文件名，路径由 CMake 统一管理
 
@@ -10,8 +10,8 @@
 
 int main()
 {
-    SetConsoleOutputCP(CP_UTF8);  // 控制台输出用 UTF-8，避免中文乱码
-    SetConsoleCP(CP_UTF8);        // 控制台输入也用 UTF-8（之后 cin 读中文会用到）
+    // SetConsoleOutputCP(CP_UTF8);  // 控制台输出用 UTF-8，避免中文乱码
+    // SetConsoleCP(CP_UTF8);        // 控制台输入也用 UTF-8（之后 cin 读中文会用到）
 
     // Worker* worker = nullptr;
     // worker = new Employee(1, "张三", 1);

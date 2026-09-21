@@ -2,8 +2,11 @@
 
 WorkerManager::WorkerManager()
 {
-}
+    //初始化属性
+    this->m_EmpNum = 0;
 
+    this->m_EmpArray = nullptr;
+}
 
 //展示菜单
 void WorkerManager::Show_Menu()
@@ -28,6 +31,75 @@ void WorkerManager::ExitSystem()
     exit(0);
 }
 
+//添加职工
+void WorkerManager::Add_Emp()
+{
+    std::cout << "请输入要添加的职工数量：" << std::endl;
+
+    int addNum = 0; //存储用户输入的职工数量
+    std::cin >> addNum;
+
+    if (addNum > 0)
+    {
+        //添加新职工
+        //计算添加新职工后的总人数
+        int newSize = this->m_EmpNum + addNum;
+        
+        //开辟新空间
+        Worker** newSpace = new Worker*[newSize];
+
+        //将原来空间下数据，拷贝到新空间下
+        if (this->m_EmpArray != nullptr)
+        {
+            for (int i = 0; i < this->m_EmpNum; i++)
+            {
+                newSpace[i] = this->m_EmpArray[i];
+            }
+        } 
+    }
+
+    //批量添加新数据
+    for (int i = 0; i < addNum; i++)
+    {
+        int id; //职工编号
+        std::string name; //职工姓名
+        int dSelect; //部门选择
+
+        std::cout << "请输入第" << i + 1 << "个新职工编号：" << std::endl;
+        std::cin >> id;
+
+        std::cout << "请输入第" << i + 1 << "个新职工姓名：" << std::endl;
+        std::cin >> name;
+
+        std::cout << "请选择该职工的岗位：" << std::endl;
+        std::cout << "1.普通员工" << std::endl;
+        std::cout << "2.经理" << std::endl;
+        std::cout << "3.老板" << std::endl;
+
+        std::cin >> dSelect;
+
+        Worker* worker = nullptr;
+
+        switch (dSelect)
+        {
+            case 1: //普通员工
+                worker = new Employee(id, name, 1);
+                break;
+            case 2: //经理
+                worker = new Manager(id, name, 2);
+                break;
+            case 3: //老板
+                worker = new Boss(id, name, 3);
+                break;
+            default:
+                break;
+        }
+
+        //将创建的职工指针，保存到数组中
+        newSpace[this->m_EmpNum + i] = worker;
+    }
+    
+}
 
 WorkerManager::~WorkerManager()
 {

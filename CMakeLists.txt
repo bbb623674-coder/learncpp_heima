@@ -11,7 +11,7 @@ project(WorkerManagerSystem CXX)
 #设定C++语言标准为11
 set(CMAKE_CXX_STANDARD 11)
 
-#可执行文件有里面的cpp文件编译链接生成
+#可执行文件有里面的cpp文件编译链接生成 
 add_executable(worker_system
     src/职工管理系统.cpp
     src/employee.cpp

@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"E:/learnCPP/\u804c\u5de5\u7ba1\u7406\u7cfb\u7edf/learncpp_heima/build/cmake_install.cmake"
+		"/Users/bai/Desktop/c++/\u804c\u5de5\u7ba1\u7406\u7cfb\u7edf/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
